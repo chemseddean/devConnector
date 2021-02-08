@@ -23,7 +23,7 @@ const onChange = e => setFormData({
 const onSubmit = async e => {
     e.preventDefault()
     if(password !== password2)
-        props.setAlert('Passwords do not match', 'danger')
+        setAlert('Passwords do not match', 'danger')
     else {
         //console.log("success")
         register({name, email, password})
