@@ -21,7 +21,7 @@ export const register = ({name, email, password}) =>
             })
         } catch (error) {
 
-            const errors = err.response.data.errors
+            const errors = error.response.data.errors
 
             if (errors){
                 errors.forEach(error => dispatch(setAlert(error.msg, 'danger')))
