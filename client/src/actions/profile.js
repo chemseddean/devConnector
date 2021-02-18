@@ -17,5 +17,8 @@ async dispatch => {
             type: PROFILE_ERROR, 
             payload: { msg: error.response.statusText, status: error.response.status}
         })
+<<<<<<< HEAD
 }
+=======
+>>>>>>> dc4d92f652fd61ead67ec0281dcf07f47aa121f5
 }
